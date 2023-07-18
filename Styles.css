@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    color: #0066cc;
+}
+
+p {
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+h1 {
+    color: #0066cc;
+}
+
+p {
+    color: #333;
+}
+
+/* Media Query for Small Devices (Mobile Phones) */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading font size for smaller screens */
+    }
+}
+/* Dark theme */
+
+@media (prefers-color-scheme: dark) {
+    .form {
+      background-color: #212121;
+      color: #fff;
+    }
+  
+    .form input,
+    .form button {
+      color: #fff;
+      background-color: #333;
+    }
+  
+    .form input:focus,
+    .form button:focus {
+      color: #fff;
+      background-color: #444;
+    }
+  }
+  
