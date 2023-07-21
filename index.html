@@ -1,17 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-
-    <title>Simple Website</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCampus</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Link your preferred Google Fonts here -->
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple website.</p>
+  <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+      <h1>MyCampus</h1>
+    </div>
+    <div class="login-container">
+      <a href="login.html">Login / Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="hero-section">
+      <div class="slideshow-container">
+        <img class="slide" src="images/a.jpg" alt="Slide 1">
+        <img class="slide" src="images/b.jpg" alt="Slide 2">
+        <img class="slide" src="images/c.jpg" alt="Slide 3">
+      </div>
+      <h2>Welcome to MyCampus!</h2>
+      <p>Your campus, all in one place. Join us today!</p>
+      <a href="register.html" class="register-button">Register Now</a>
+    </section>
+   
+
+    <section class="app-promotion">
+      <div class="app-image-container">
+        <img src="images/app.png" alt="MyCampus App">
+      </div>
+      <div class="app-description">
+        <h3>Discover Our Mobile App</h3>
+        <p>Explore our mobile app's features and stay connected with your campus community on the go.</p>
+        <a href="#" class="install-button">Install Now</a>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="service">
+        <div class="service-image">
+          <img src="images/stationaries.jpg" alt="Service 1">
+        </div>
+        <h3>Service 1</h3>
+        <p>Service 1 description goes here.</p>
+      </div>
+      <div class="service">
+        <div class="service-image">
+          <img src="images/xerox.jpg" alt="Service 2">
+        </div>
+        <h3>Service 2</h3>
+        <p>Service 2 description goes here.</p>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <div class="glass-card">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2023 MyCampus. All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScript for scroll animations
+    const heroSection = document.querySelector('.hero-section');
+  
+    function animateHeroSection() {
+      const scrollY = window.scrollY;
+      const heroHeight = heroSection.offsetHeight;
+      const headline = heroSection.querySelector('h2');
+      const registerButton = heroSection.querySelector('.register-button');
+  
+      const offset = 100;
+  
+      if (scrollY > heroHeight - offset) {
+        headline.style.transform = 'scale(1.2)';
+        registerButton.style.transform = 'scale(1.2)';
+      } else {
+        headline.style.transform = 'scale(1)';
+        registerButton.style.transform = 'scale(1)';
+      }
+    }
+  
+    window.addEventListener('scroll', animateHeroSection);
+  </script>
+ 
 </body>
 </html>
