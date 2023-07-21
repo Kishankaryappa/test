@@ -1,39 +1,248 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002147;
+    padding: 10px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container h1 {
+    font-size: 28px;
+  }
+  
+  .login-container a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .hero-section {
+    
     text-align: center;
-}
-
-h1 {
-    color: #0066cc;
-}
-
-p {
-    color: #333;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    padding: 100px;
+    background-image: linear-gradient(to bottom, #002147, #005792);
+  }
+  
+  .hero-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 24px;
+  }
+  /* Add styles for the image slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover;
+    display: none;
+  }
+  
+  /* CSS for animating the slideshow */
+  .hero-section.fade .slide {
+    animation: fade 3s ease-in-out infinite;
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  .register-button {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #009688;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #00bcd4;
+  }
+  
+  .app-promotion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-image: linear-gradient(to bottom, #005792,#002147 );
+  }
+  
+  .app-image-container img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  
+  .app-description {
     text-align: center;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-}
-
-h1 {
-    color: #0066cc;
-}
-
-p {
-    color: #333;
-}
-
-/* Media Query for Small Devices (Mobile Phones) */
-@media (max-width: 767px) {
-    body {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
-    h1 {
-        font-size: 24px; /* Adjust heading font size for smaller screens */
-    }
-}
+    max-width: 400px;
+  }
+  
+  .app-description h3 {
+    font-size: 32px;
+  }
+  
+  .app-description p {
+    font-size: 18px;
+  }
+  
+  .install-button {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #009688;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .install-button:hover {
+    background-color: #00bcd4;
+  }
+  
+  .services-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: #005792;
+  }
+  
+  .service {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service .service-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+  }
+  
+  .service .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .feedback-section {
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-color: #414141;
+    color: #ffffff;
+  }
+  
+  .glass-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(151, 151, 151, 0.251);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feedback-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .feedback-section form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .feedback-section label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .feedback-section input,
+  .feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+  
+  .feedback-section button {
+    color: #000000;
+    background-color: #82ffc7;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .feedback-section button:hover {
+    background-color: #179494;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #002147;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  /* CSS for fade-in animations */
+.animate {
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  
+  .animate.visible {
+    opacity: 1;
+  }
