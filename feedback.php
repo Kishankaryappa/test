@@ -31,9 +31,9 @@
 </body>
 </html>
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer;
+use SMTP;
+use Exception;
 if(isset($_POST['send']))
 {
 
