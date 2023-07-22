@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCampus</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>MyCampus</h1>
+    </div>
+    <div class="welcome-container">
+      <p>Welcome!! Back</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="login-card">
+      <form action="login.php" method="post">
+        <div class="form-title">Login</div>
+        <div class="input-container">
+          <label for="usn">User ID (Your USN)</label>
+          <input type="text" id="usn" name="USN" placeholder="Enter your USN" required>
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="NewPassword" placeholder="Enter your password" required>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+      <div class="register-link">
+        <p>New User? <a href="register.html">Register Here</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

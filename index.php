@@ -16,17 +16,26 @@
       <h1>MyCampus</h1>
     </div>
     <div class="login-container">
-      <a href="login.html">Login / Sign Up</a>
+      <?php
+      session_start();
+      // Check if the user_name query parameter exists
+      if (isset($_SESSION['user_name'])) {
+        $user_name = $_SESSION['user_name'];
+        // Display the user's name from the query parameter
+        echo '<a href="profile.php">Hello!!👋 ' . $user_name . '</a>';
+      } else {
+        // Display the default login / sign-up link if the user_name parameter is not set
+        echo '<a href="login.html">Login / Sign Up</a>';
+      }
+      ?>
     </div>
   </header>
-
-  <!-- Main Content Section -->
   <main>
     <section class="hero-section">
       
       <h2>Welcome to MyCampus!</h2>
       <p>Your campus, all in one place. Join us today!</p>
-      <a href="register.html" class="register-button">Register Now</a>
+      
     </section>
    
 

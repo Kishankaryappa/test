@@ -1,0 +1,127 @@
+/* Add your desired dark theme styles here */
+body {
+  background-color: #222222;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Glass floating effect */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: rgba(145, 145, 145, 0.186); /* Slightly transparent background */
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  border-radius: 10px; /* Rounded corners for the glass effect */
+  padding: 35px; /* Add padding for some spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Animation for the form */
+.container {
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-title {
+  text-align: center;
+  font-size: 36px;
+ 
+  margin-bottom: 20px;
+  font-family: 'Sansita', sans-serif; /* Apply the Nature Beauty font */
+}
+
+input,
+select {
+  width: 300px; /* You can adjust the width as per your preference */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(128, 191, 255, 0);
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* For Safari */
+}
+
+/* Placeholder text color */
+::placeholder {
+  color: #ccc; /* Set the color of input placeholders to a shade of grey */
+  transition: color 0.3s ease-in-out; /* Add transition for smooth glow effect */
+}
+select::after {
+  content: '\f0d7'; /* Font Awesome chevron-down icon */
+  font-family: 'Font Awesome\ 6 Free'; /* Specify Font Awesome font family */
+  font-weight: 900; /* Specify Font Awesome font weight */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none; /* Prevent icon from capturing click events */
+}
+/* Apply similar styles to select dropdown placeholder */
+select::placeholder {
+  color: transparent; /* Set the color of select placeholders to transparent */
+}
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold; /* Added bold font weight */
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #d5d5d5;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #ebebeb;
+}
+
+/* Password input container */
+.password-input {
+  position: relative;
+}
+
+/* Password toggle icon position */
+.password-input i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(255, 255, 255); /* Set the color of the eye icons to black */
+}
+
+/* Styling the dropdown menu */
+
+/* Apply dark theme to dropdown options */
+select option {
+  background-color: rgb(39, 39, 39); /* Set background color for options */
+  color: #fff; /* Set font color for options */
+}
+select:focus {
+  background-color: rgba(255, 255, 255, 0.3); /* Change background on focus to indicate interactivity */
+}

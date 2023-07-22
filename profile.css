@@ -1,0 +1,102 @@
+/* Add the existing CSS styles here (from the provided code) */
+
+/* Add custom styles for the profile page */
+
+body {
+  /* Add your preferred background and text color styles here */
+  font-family: 'Work Sans', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* Add your preferred styles for the header here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  /* Add your preferred styles for the logo container here */
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h1 {
+  /* Add your preferred styles for the logo here */
+  font-size: 28px;
+}
+
+.login-container a {
+  /* Add your preferred styles for the login container here */
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container a:hover {
+  /* Add your preferred styles for the login link on hover here */
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.profile-section {
+  /* Add your preferred styles for the profile section here */
+  text-align: center;
+  padding: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-section h2 {
+  /* Add your preferred styles for the heading here */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.profile-section p {
+  /* Add your preferred styles for the user details here */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-button {
+  /* Add your preferred styles for the "Home" button here */
+  color: #fff;
+  text-decoration: none;
+  background-color: #009688;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-button:hover {
+  /* Add your preferred styles for the "Home" button on hover here */
+  background-color: #00bcd4;
+  transform: translateY(-5px);
+}
+
+footer {
+  /* Add your preferred styles for the footer here */
+  text-align: center;
+  background-color: #222222;
+  padding: 20px;
+}
+
+footer p {
+  /* Add your preferred styles for the footer text here */
+  font-size: 16px;
+  color: #fff;
+}

@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+}
+
+header {
+  text-align: left;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+}
+
+header h1 {
+  margin: 0;
+  color: #fff; /* Set the font color to white */
+  font-family: 'Righteous',cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Dark black gradient */
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+.glassy-card {
+  width: 400px;
+  padding: 30px;
+  background: rgba(207, 207, 207, 0.233); /* Transparent black background */
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0 0px 10px rgba(31, 31, 31, 0.322);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Original Surfer', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff; /* Set the font color to white */
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent black background */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Use a dark black theme color if desired */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Use a dark black theme color if desired */
+}
+
+button:focus {
+  outline: none;
+}
+
+.success {
+  background-color: #1abc9c; /* Use a dark black theme color if desired */
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.alert {
+  background-color: #e74c3c; /* Use a dark black theme color if desired */
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
